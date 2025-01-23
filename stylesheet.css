@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.task{
+    width: 15%;
+    height: 50vh;
+    margin: 60px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #00000090;
+}
+.all{
+    margin: 10px;
+    padding-top: 10px;
+    margin-left: 46px;
+    font-size: 26px;
+    color: orangered;
+    border-bottom: 2px solid;
+    margin-right: 45px;
+}
+.task1{
+    border: 1px solid;
+    margin: 3px;
+    font-size: 25px;
+    width: 66px;
+    height: 33px;
+    text-align: center;
+    background: yellowgreen;
+    border-radius: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.task1:hover{
+    background: #45a049;
+}
+.task1:active{
+    transform: scale(0.80);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.flex{
+    display: flex;
+    margin: 10px;
+    margin-left: 30px;
+    column-gap: 20px;
+}
