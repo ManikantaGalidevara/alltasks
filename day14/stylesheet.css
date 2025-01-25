@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.margi{
+    width: 28%;
+    height: 40vh;
+    padding: 1%;
+    margin: 2%;
+    border: 2px solid;
+    background: orange;
+}
+.margi:hover{
+    background: rgb(214, 4, 251);
+}
+.bord{
+    width: 85%;
+    margin: 1%;
+    padding: 1%;
+    margin-left: 6.8%;
+    margin-top: 3%;
+    height: 27.5vh;
+    padding-left: 3%;
+    padding-top: 2%;
+    border: dashed;
+    background: skyblue;;
+}
+.pad{
+    border: 1px solid;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 3%;
+    height: 17vh;
+    padding-top: 2%;
+    padding-left: 2%;
+    background: greenyellow;
+}
+.pad:hover{
+    background: yellow;
+}
+.content{
+    margin: 1%;
+    margin-top: 3%;
+    margin-left: 12%;
+    width: 75%;
+    height: 8vh;
+    text-align: center;
+    padding-top: 2%;
+    border: dotted;
+    background: lightpink;
+}
+div:hover{
+    background: rgb(235, 159, 159);
+
+}
+
