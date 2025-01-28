@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.nav{
+    background-color: white;
+    margin-top: 0%;
+    position: sticky;
+    top: 0%;
+    border: none;
+    box-shadow: 0px 0px 15px #00000080;
+    padding-top: 1.5%;
+    padding-bottom: 0.8%;
+    z-index: 1;
+}
+.br{
+    font-size: 26px;
+    margin-left: 2%;
+    
+}
+.anch{
+    float: right;
+    text-decoration: none;
+    margin-right: 3%;
+   word-spacing: 26px;
+}
+.pht{
+    position: relative;
+}
+.pht img{
+    width: 100%;
+}
+.att{
+    font-size: 30px;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 42%;
+}
+.rb{
+    background: hwb(0 27% 73%);
+    padding: 2%;
+    font-size: 36px;
+    color: white;
+    width: 40%;
+    height: 40px;
+    text-align: center;
+}
+.rbb{
+    margin-left: 12%;
+    font-size: 40px;
+    color: white;
+}
+#pp{
+    font-size: 30px;
+    margin: 2%;
+    margin-top: 4%;
+}
+.cad{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 2%;
+    position: relative;
+    margin-top: 4%;
+}
+.cad img{
+    width: 100%;
+    margin: 0%;
+   
+}
+.nam{
+    width: 28%;
+    margin-right: 1%;
+    position: relative;
+    
+}
+.nam p{
+    width: 41%;
+    height: 36px;
+    color: white;
+    background: #000;
+    font-size: 20px;
+    padding-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+.nam1{
+    width: 28%;
+    margin-right: 1%;
+    position: relative;
+}
+.nam1 p{
+    width: 41%;
+    height: 36px;
+    color: white;
+    background: #000;
+    font-size: 20px;
+    padding-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+.nam2{
+    width: 28%;
+    margin-right: 1%;
+    position: relative;
+}
+.nam2 p{
+    width: 41%;
+    height: 36px;
+    color: white;
+    background: #000;
+    font-size: 20px;
+    padding-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+.nam3{
+    width: 28%;
+    margin-right: 1%;
+    position: relative;
+}
+.nam3 p{
+    width: 41%;
+    height: 36px;
+    color: white;
+    background: #000;
+    font-size: 20px;
+    padding-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+.cad2{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 2%;
+    position: relative;
+    margin-top: 2%;
+}
+.cad2 img{
+    width: 100%;
+    margin: 0%;
+   
+}
+.dam{
+    width: 28%;
+    margin-right: 1%;
+    position: relative;
+    
+}
+.dam p{
+    width: 41%;
+    height: 36px;
+    color: white;
+    background: #000;
+    font-size: 20px;
+    padding-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+.dam1{
+    width: 28%;
+    margin-right: 1%;
+    position: relative;
+}
+.dam1 p{
+    width: 41%;
+    height: 36px;
+    color: white;
+    background: #000;
+    font-size: 20px;
+    padding-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+.dam2{
+    width: 28%;
+    margin-right: 1%;
+    position: relative;
+}
+.dam2 p{
+    width: 41%;
+    height: 36px;
+    color: white;
+    background: #000;
+    font-size: 20px;
+    padding-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+.dam3{
+    width: 28%;
+    margin-right: 1%;
+    position: relative;
+}
+.dam3 p{
+    width: 41%;
+    height: 36px;
+    color: white;
+    background: #000;
+    font-size: 20px;
+    padding-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+#ap{
+    font-size: 25px;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+#lin{
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 0.8%;
+    font-size: 18px;
+}
+.trd{
+    display: flex;
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+.afri{
+    width: 24%;
+    height: 380px;
+    margin-right: 1%;
+    border: none;
+    box-shadow: 0px 0px 15px #00000060;
+    
+}
+.afri img{
+    width: 100%;
+}
+.afri h4{
+    font-size: 20px;
+    margin: 1%;
+    margin-left: 1.5%;
+}
+#jon{
+    font-size: 16px;
+    margin: 1%;
+    margin-left: 1.5%;
+}
+#jot{
+    font-size: 15px;
+    margin: 1%;
+    margin-left: 1.5%;
+}
+.afri button{
+    width: 96%;
+    height: 30px;
+    margin: 1%;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.afri button:hover{
+    background-color: #00000080;
+}
+#cot{
+    font-size: 22px;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+#let{
+    font-size: 16px;
+    margin: 1%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.last input{
+    margin: 0.4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 90%;
+    height: 33px;
+    font-size: 15px;
+    padding-left: 0.5%;
+    
+}
+.last button{
+    margin: 2%;
+    height: 40px;
+    width: 12%;
+    font-size: 16px;
+    color: white;
+    background: #000;
+}
+.last button:hover{
+    color: black;
+    background: #bfbfbf;
+}
+.rod img{
+    width: 100%;
+    height: 700px;
+}
