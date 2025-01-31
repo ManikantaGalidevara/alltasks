@@ -224,3 +224,6 @@ input:focus{
     background: #727171;
 
 }
+.sec i{
+    color: red;
+}
