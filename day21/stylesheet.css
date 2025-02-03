@@ -1,0 +1,202 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    font-size: 20px;
+    font-weight: 500;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;    
+    padding-left: 2%;
+    padding-right: 6%;
+    flex-basis: 100%;
+    background: whitesmoke;
+    border-bottom: none;
+    box-shadow: 0px 0px 8px;
+    
+}
+.tags{
+    column-gap: 30px;
+    text-decoration: none;
+    display: flex;
+    
+}
+.tags a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+.tags a:hover{
+    background: #000;
+    color: white;
+}
+.name{
+    width: 12.5%;
+    padding-left: 0.5%;
+}
+.name:hover{
+    background: #000;
+    color: white;
+}
+.burger{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.burger img{
+    width: 100%;
+    height: 100%;
+    
+}
+.burger p{
+    position: absolute;
+    bottom: 8.6%;
+    left: 2.5%;
+    font-size: 42px;
+}
+.section2{
+    display: flex;
+    margin-left: 14%;
+    margin-top: 5%;
+    height: 85vh;
+    flex-basis: 100%;
+}
+.plate{
+    flex-basis: 30%;
+    height: 84vh;
+}
+.plate img{
+    width: 100%;
+    height: 100%;
+}
+.matter{
+    flex-basis: 35%;
+    margin-left: 4%;
+}
+.matter p{
+    margin-bottom: 2%;
+}
+#abt{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 3%;
+    letter-spacing: 7%;
+}
+#abt1{
+    font-size: 20px;
+    margin-top: 9%;
+    margin-bottom: 5%;
+    text-align: center;
+    letter-spacing: 12%;
+
+}
+#abt2{
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+#abt3{
+    font-size: 18px;
+    margin-top: 6%;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+.section3{
+    display: flex;
+    margin-left: 14%;
+    margin-top: 10%;
+    margin-right: 4%;
+    flex-direction: row-reverse;
+    justify-content: start;
+    height: 86vh;
+    flex-basis: 100%;
+}
+.table{
+    flex-basis: 40%;
+    height: 86vh;
+    margin-left: 10%;
+}
+.table img{
+    width: 100%;
+    height: 100%;
+}
+
+#mat3{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10%;
+}
+#mat{
+    font-size: 20px;
+    margin-top: 10%;
+    letter-spacing: 16%;
+}
+#mat1{
+    font-size: 15px;
+    margin-top: 4%;
+}
+.contact{
+    margin-left: 0%;
+    margin: 0%;
+    margin-top: 6%;
+    padding-right: 6%;
+    margin-right: 0%;
+    padding-left: 14%;
+ }
+ .contact h1{
+    margin-bottom: 3%;
+    font-size: 40px;
+ }
+ .contact p{
+    margin: 1%;
+ }
+ .contact input{
+    margin-top: 1%;
+    height: 6vh;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 0.5%;
+    margin-bottom: 1%;
+    width: 80%;
+ }
+ .contact button{
+    width: 140px;
+    height: 6vh;
+    margin-bottom: 1%;
+    font-size: 16px;
+    margin-top: 2%;
+ }
+ button:hover{
+    background: #000;
+    color: whitesmoke;
+ }
+ .container{
+    overflow: none;
+ }
+ .bot{
+    height: 3vh;
+    background: gray;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 2%;
+ }
+ .bot a{
+    text-decoration: none;
+    color: rgb(244, 11, 11);
+ }
+ .bot a:hover{
+    background: #000;
+    color: white;
+ }
