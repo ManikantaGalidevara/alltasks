@@ -200,3 +200,24 @@
     background: #000;
     color: white;
  }
+
+
+
+ @media screen and (width<576) {
+    .main{
+        width: 100%;
+        font-size: 15px;        
+    }
+    .burger{
+        width: 100%;
+    }
+    .section2{
+        display: block;
+    }
+    .plate{
+        width: 100%;
+    }
+    .matter{
+        width: 100%;
+    }
+ }
