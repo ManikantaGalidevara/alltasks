@@ -3,185 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>animations</title>
     <style>
-        *{
-            margin: 0%;
-            padding: 0%;
-        }
-        body{
-            width: 100%;
-            height: 100vh;
-            background-image: url(imge2.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .box{
-            width: 20%;
-            height: 65vh;
-            box-shadow: 0px 0px 15px;
-            margin: 5%;
-            padding: 2%;
-            background-image: url(imge3.jpg);
-        }
-        .rotate{
-            width: 50%;
-            height: 20vh;
-            border-radius: 100% 100% 100% 100%;
-            margin: 5%;
-            margin-left: 20%;
-            margin-bottom: 40%;
-            animation-name: rotate;
-            animation-iteration-count: infinite;
-            animation-duration: 7s;
-        }
-        .rotate img{
-            width: 100%;
-            height: 100%;
-            border-radius: 100% 100% 100% 100%;
-        }
-        .music{
-            display: grid;
-            grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
-           height: 20vh;
-            gap: 2%;
-            align-items: end;
-            /* background: green; */
-            margin-bottom: 1%;
-
-        }
-        #maxi{
-            width: 100%;
-            height: 2vh;
-            margin: 1%;
-            background: #f12727;
-            box-shadow: 0px 0px 2px;
-            border-radius: 4px 4px 0px 0px;
-           
-        }
-        .lines1{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-timing-function: ease;
-            animation-iteration-count: infinite;
-        }
-        .lines2{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in;
-        }
-        .lines3{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
-            animation-iteration-count: infinite;
-        }
-        .lines4{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-        }
-        .lines5{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-timing-function: ease;
-            animation-iteration-count: infinite;
-        }
-        .lines6{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-timing-function: ease-in;
-            animation-iteration-count: infinite;
-        }
-        .lines7{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
-            animation-iteration-count: infinite;
-        }
-        .lines8{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-        }
-        .lines9{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-timing-function: ease-in;
-            animation-iteration-count: infinite;
-        }
-        .lines10{
-            animation-name: height;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
-            animation-iteration-count: infinite;
-        }
-        @keyframes height{
-            0%{
-                transform: translateY(0px);
-                transform-origin:bottom;
-            }
-            100%{
-                transform: translateY();
-                height: 20vh;
-                transform-origin:bottom;
-            }
-        }
-        @keyframes rotate{
-            from{
-                transform: rotate(0deg);
-            }
-            to{
-                transform: rotate(360deg);
-            }
-        }
-        
-
-        @media screen and (width<576) {
-            body{
-                width: 100%;
-                height: 100vh;
-            }
-            .box{
-                width: 50%;
-                height: 60vh;
-            }
-            
-            
+        a{
+            text-decoration: none;
+            color: orangered;
+            font-size: 2rem;
+            margin: 2%;
+            border: 1px solid;
+            background: greenyellow;
         }
     </style>
 </head>
 <body>
-       <div class="section">
-               
-                   <div class="box">
-                             <div class="rotate">
-                                <img src="pic.jpg" alt="">
-
-                             </div>
-                             <div class="music">
-                                      <div class="lines1" id="maxi"></div>
-                                      <div class="lines2" id="maxi"></div>
-                                      <div class="lines3" id="maxi"></div>
-                                      <div class="lines4" id="maxi"></div>
-                                      <div class="lines5" id="maxi"></div>
-                                      <div class="lines6" id="maxi"></div>
-                                      <div class="lines7" id="maxi"></div>
-                                      <div class="lines8" id="maxi"></div>
-                                      <div class="lines9" id="maxi"></div>
-                                      <div class="lines10" id="maxi"></div>
-                             </div>
-
-                             <div class="audio">
-                                <audio controls>
-                                    <source src="Godari Gattu.mp3">
-                                 </audio>
-                             </div>
-                   </div>
-       </div>
+        <a href="large.html">Task-1</a>
+        <a href="balls.html">Task-2</a>
 </body>
 </html>
