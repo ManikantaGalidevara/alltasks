@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (var a = 1; a <= 50; a++) {
+        if (a % 5 == 0) {
+          console.log(a);
+        }
+      }
+
+      var b = 0;
+      for (var a = 0; a <= 100; a++) {
+        b += a;
+      }
+      console.log(b);
+
+      var b = 1;
+      for (var a = +prompt("enter a factorial number "); a > 1; a--) {
+        b *= a;
+      }
+      console.log(b);
+
+      for (a = 10; a > 0; a--) {
+        console.log(a);
+      }
+      str1 = "";
+      str = "";
+      for (i = 65; i <= 90; i++) {
+        str = String.fromCharCode(i);
+        console.log(str);
+        str1 += str;
+      }
+      console.log(str1);
+    </script>
+  </body>
+</html>

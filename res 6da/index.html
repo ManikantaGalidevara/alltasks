@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+            height: 20vh;
+        }
+        button{
+            width: 25%;
+            height: 5vh;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        .hhh{
+            display: none;
+        }
+        .hid{
+            display: block;
+        }
+        .het{
+             display: none;
+        }
+        .appl{
+            border: 2px dashed;
+            box-shadow: 0px 0px 5px;
+            background: rgb(253, 92, 253);
+            height: 30vh;
+            width: 100%;
+            margin: 1%;
+        }
+        .appl h1{
+            color: rgb(255, 255, 255);
+            margin: 5%;
+            text-align: center;
+
+        }
+        .appl p{
+            color: yellow;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .appl button{
+            width: 30%;
+            font-size: 1.1rem;
+            margin-left: 20%;
+            background: #7661ff;
+            color: whitesmoke;
+        }
+        #ss{
+            display: none;
+        }
+        .maa{
+            display: none;
+        }
+        
+        .maa2{
+            display: block;
+        }
+        .js{
+            width: 16%;
+            height: 20vh;
+            border: 1px solid;
+            text-align: center;
+        }
+
+        .total{
+            background: rgb(130, 180, 238);
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10%;
+            width: 80%;
+            padding: 0% 3%;
+            margin: 3%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="total">
+        <div class="first" style="border: 1px solid; width: 100%;">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.vLnQ97BKM2GxEz-SS8305AHaEK&pid=Api&P=0&h=180" alt="pubg"><br>
+        <button onclick="cli()" style="background-color: blueviolet;">click</button><br>
+
+    </div>
+         
+        <div class="second" style="border: 1px solid; width: 100%;">
+        <div id="clicl">click the button to visible a image</div>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.E8of7HqBIK5rcVwg49_2ewHaEH&pid=Api&P=0&h=180" alt="" id="hide" class="hhh"><br>
+        <buTTon onclick="visi()" id="btn">visible / hide</buTTon>
+
+    </div>
+
+
+        <div class="appl1" style="border: 1px solid; width: 100%;">
+            <h1 id="helo">hello world</h1>
+            <p id="for1">for applying css click the button</p>
+            <p class="for2" id="ss">for removeing css click the button</p>
+            <button onclick="change()">click</button>
+        </div>
+
+    </div>
+
+        <script>
+            function cli(){
+                let pg = document.getElementsByTagName("img")[0]
+                pg.src="https://tse1.mm.bing.net/th?id=OIP.QWb49F8tGT8G1WgoYX_bKgHaEK&pid=Api&P=0&h=180"
+                pg.alt="pubg2"
+                pg.classList.add("img")
+            }
+
+            // second question______2>>>>
+
+            let body = document.getElementsByTagName("body")
+            let diva = document.createElement("div")
+            let text =["maxi", "heixy", "rocky", "theme"]
+            let color = ["red", "blue", "yellowgreen", "purple"]
+            let divi = document.createElement("h2")
+            let button = document.createElement("button")
+            let but = document.createElement("button")
+            divi.innerHTML ="click the button"
+            button.innerHTML ="click me"
+            count = 0
+            document.body.append(diva)
+            diva.append(divi, button, but)
+            diva.classList.add("js")
+            button.addEventListener("click", function(){
+                for (let i = 0; i < text.length; i++){
+                    if (count == text.length){
+                        count = 0
+                    }
+                    divi.innerHTML = text[count];
+                    diva.style.background=color[count]
+                }
+                count++
+            })
+            but.innerHTML="reset"
+            but.style.marginLeft ="2%"
+            but.addEventListener("click", function(){
+                divi.innerHTML="click the button"
+            })
+
+
+
+            // third question______3>>>>
+
+            let clicl = document.getElementById("clicl")
+            let hideee = document.getElementById("hide")
+            function visi(){
+                clicl.classList.toggle("het")
+                hideee.classList.toggle("hhh")
+
+            }
+
+
+            // four question______4>>>>
+            let appl = document.getElementsByClassName("appl1")
+            let helo = document.getElementById("helo")
+            let for1 = document.getElementById("for1")
+            let for2 = document.getElementsByClassName("for2")
+            function change(){
+                for (i = 0; i < appl.length; i++){
+                    appl[i].classList.toggle("appl")
+                }
+                // for1.classList.toggle("maa")
+                for2.classList.toggle("maa")
+                appl.classList.toggle("appl")
+            }
+            console.log(appl)
+
+
+
+
+
+            
+        </script>
+
+
+</body>
+</html>

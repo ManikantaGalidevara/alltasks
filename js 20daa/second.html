@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 1px solid;
+            padding: 1%;
+            width: 20%;
+            background: peru;
+        }
+        .merge{
+           color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+       
+    </div>  
+    
+    <script>
+
+        let box = document.getElementsByClassName("box")[0]
+        
+        let getname = JSON.parse(localStorage.getItem("username"))
+        
+        
+        let display = getname.map((val)=>{
+            let merge = document.createElement("div")
+            let child = document.createElement("h3")
+            let child2 = document.createElement("p")
+
+            child2.classList.add("merge")
+            
+           child.innerHTML += `Name: ${val.name}`;
+           child2.innerHTML = `E-mail : ${val.email} `;
+           merge.append(child, child2)
+           box.append(merge)
+           
+        })
+    
+
+        document.body.append(box)
+        box.append(child)
+        console.log(getname.name)
+
+    </script>
+</body>
+</html>

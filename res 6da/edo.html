@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+    <style>
+        img {
+            width: 20%;
+            height: 20vh;
+        }
+        button {
+            width: 10%;
+            height: 5vh;
+            margin-top: 10%;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .appl{
+            border: 2px dashed;
+            box-shadow: 0px 0px 5px;
+            background: rgb(253, 92, 253);
+            height: 30vh;
+            width: 25%;
+            margin: 1%;
+        }
+        .appl h1{
+            color: rgb(255, 255, 255);
+            margin: 5%;
+            text-align: center;
+
+        }
+        .appl p{
+            color: yellow;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .appl button{
+            width: 30%;
+            font-size: 1.1rem;
+            margin-left: 20%;
+            background: #7661ff;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://tse3.mm.bing.net/th?id=OIP.vLnQ97BKM2GxEz-SS8305AHaEK&pid=Api&P=0&h=180" alt="pubg"><br>
+    <button onclick="cli()">Click</button><br>
+
+
+
+    <div class="appl1">
+        <h1 id="helo">hello world</h1>
+        <p id="for1">for applying css click the button</p>
+        <button onclick="change()">click</button>
+    </div>
+
+
+    <script>
+        function cli() {
+            let pg = document.getElementsByTagName("img")[0];
+            pg.src = "https://tse1.mm.bing.net/th?id=OIP.QWb49F8tGT8G1WgoYX_bKgHaEK&pid=Api&P=0&h=180";
+            pg.alt = "pubg2";
+            pg.classList.add("img");
+        }
+
+
+
+        
+        let body = document.getElementsByTagName("body")[0];
+let text = ["maxi", "heixy", "rocky", "theme"];
+let divi = document.createElement("h2");
+let button = document.createElement("button");
+
+divi.innerHTML = "Click the button";
+button.innerHTML = "Click me";
+let count = 0;
+
+document.body.append(divi, button);
+
+button.addEventListener("click", function() {
+    // Update the divi content with the current text at index `count`
+    divi.innerHTML = text[count];
+    
+    // Increment the count, and reset it if it reaches the end of the array
+    count++;
+    if (count == text.length) {
+        count = 0; // Reset count to 0 when it reaches the end of the array
+    }
+});
+
+
+
+
+
+
+let appl = document.getElementsByClassName("appl1");
+let helo = document.getElementById("helo");
+let for1 = document.getElementById("for1");
+
+function change() {
+    // Loop through the collection to toggle class for each element in appl
+    for (let i = 0; i < appl.length; i++) {
+        appl[i].classList.toggle("appl");
+    }
+    
+    // Toggle classes for the other elements
+    helo.classList.toggle("appl");
+    helo.classList.toggle("h1");
+    for1.classList.toggle("appl");
+    for1.classList.toggle("p");
+}
+
+console.log(appl);
+
+
+
+    </script>
+</body>
+</html>

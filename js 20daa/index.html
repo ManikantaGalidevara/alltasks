@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .parent{
+            width: 30%;
+            box-shadow: 0rem 0rem 0.5rem 0rem;
+            background: #88f7af;
+            margin: auto;
+        }
+        .parent input, label, button{
+            margin: 1%;
+            font-size: 1rem;
+        }
+        button{
+            margin: 3%;
+            color: rgb(255, 255, 255);
+            background: #000;
+        }
+    </style>
+<body>
+        <div class="parent">
+
+            <button onclick="route()">see users data</button>
+
+            <form action="">
+                <label for="name">NAME :</label>
+                <input type="text" id="name" placeholder="Enter your name" required><br>
+
+                <label for="email">EMAIL :</E-MAIL></label>
+                <input type="email" id="email" placeholder="Enter your email" required><br>
+
+                <button onclick="fun(event)" type="submit">submit</button>
+            </form>
+        </div>
+
+        <script>
+
+            let username = document.getElementById("name")
+            let useremail = document.getElementById("email")
+
+            let data1 = []
+            
+            function fun(e){
+                e.preventDefault()
+                console.log(username.value);
+                
+                if ((username.value).length == "" && (useremail.value).length == ""){
+                    alert("please enter your details")
+                }else if(((username.value).length >1) && ((username.value).length >1)){
+                    alert("successfully submited your details")
+                
+                }
+                
+                let details = {
+                    name : username.value,
+                    email : useremail.value
+                }
+                console.log(details);
+                
+                data1.push(details)
+
+                console.log(data1);
+                
+                localStorage.setItem("username", JSON.stringify(data1))
+    
+                useremail.value = ""
+                username.value = ""
+                
+                
+                console.log(data1[0].name)
+                console.log(data1[0].value)
+
+            }
+
+            function route(){
+                window.open("second.html", "_blank")
+            }
+            
+            
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let num1 =+prompt("Enter a number ")
+        let a =(num1%2==0)? "even" : "odd";
+        console.log(a)
+
+        let num2 =+prompt("enter a number");
+        let b =(num2>=18)? 'adult' : 'minor';
+        console.log(b);
+
+        let num3 =+prompt("enter a number");
+        let c =(num3>=90)? '1st grade' : (num3=75)? '2nd grade' : (num3>=60)? '3r grade' :(num3>=45)? '4th grade': 'average' 
+        console.log(c);
+
+
+        let num4 =+prompt("enter a temperature");
+        let d =(num4<=30 , num4>=20)? 'warm' : (num4<=19 , num4>=10)? 'cool' : (num4<10)? 'cold': "enter temparature value" ;
+        console.log(d);
+
+        let num5 =+prompt("enter a age");
+        let e =(num5>= 0, num5<=12)? 'child' : (num5>=13 , num5<=19)? 'teen' : (num5>=20, num5<=64)? 'adult':(num5>=65)? 'senior': "enter valid age" ;
+        console.log(e);
+    </script>
+</body>
+</html>

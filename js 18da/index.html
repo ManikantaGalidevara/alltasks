@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let sum = [99, 55, 66, 77, 88, 66, 20]
+        let newSum = sum.reduce((a, v, i, s) => {
+            return a + v
+        }, 0)
+        console.log(newSum)
+
+        let avg = [99, 55, 66, 77, 88, 66, 20]
+        let newAvg = avg.reduce((a, v, i, s) => {
+            return ((a + v) / avg.length)
+        })
+        console.log(newAvg)
+
+        let under = [
+            { name: "John", age: 17 },
+            { name: "Jane", age: 22 },
+            { name: "Jim", age: 15 },
+            { name: "Jack", age: 19 }
+        ]
+
+        let newUnder = under.filter((a, i, s) => {
+            return a.age < 18
+        })
+        console.log(newUnder)
+    </script>
+</body>
+
+</html>

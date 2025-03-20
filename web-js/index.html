@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <script>
+        let body = document.getElementsByName("body")
+        let navi = document.createElement("div")
+        let nav = document.createElement("nav")
+        let bu = document.createElement("p")
+        let ul = document.createElement("ul")
+        let li = document.createElement("li")
+        let li1 = document.createElement("li")
+        let li2 = document.createElement("li")
+        let anc = document.createElement("a")
+        let anc1 = document.createElement("a")
+        let anc2 = document.createElement("a")
+
+        bu.innerHTML = "<b>BR</b> Architects"
+        anc.innerHTML = "Projects"
+        anc1.innerHTML = "About"
+        anc2.innerHTML = "contact"
+
+        document.body.append(navi)
+        navi.append(bu, nav)
+        nav.append(ul)
+        ul.append(li, li1, li2)
+        li.append(anc)
+        li1.append(anc1)
+        li2.append(anc2)
+
+        navi.classList.add("navi")
+        ul.classList.add("ul")
+
+        // first section--1
+
+        let image1 = document.createElement("img")
+        image1.src = "https://www.w3schools.com/w3images/architect.jpg"
+        document.body.append(image1)
+        image1.classList.add("image1")
+
+
+        // <<<---------section--2---------->>>
+
+        let Projects = document.createElement("div")
+        let Projects11 = document.createElement("h2")
+        let all_images = ["https://www.w3schools.com/w3images/house5.jpg", "https://www.w3schools.com/w3images/house2.jpg", "https://www.w3schools.com/w3images/house3.jpg", "https://www.w3schools.com/w3images/house4.jpg", "https://www.w3schools.com/w3images/house2.jpg", "https://www.w3schools.com/w3images/house5.jpg", "https://www.w3schools.com/w3images/house4.jpg", "https://www.w3schools.com/w3images/house3.jpg"]
+        let quotes = ["Summer House", "Brick House", "Renovated", "Barn House", "Summer House", "Brick House", "Renovated", "Barn House"]
+        document.body.append(Projects)
+        Projects.append(Projects11)
+        Projects11.innerHTML = "Projects"
+        Projects11.classList.add("prop")
+        let box1 = document.createElement("div")
+        for (i =0; i<all_images.length ; i++){
+        let box = document.createElement("div")
+        let img1 =document.createElement("img")
+        let text = document.createElement("p")
+        img1.src=all_images[i]
+        text.innerHTML=quotes[i]
+        Projects11.append(box1)
+        box.append(img1, text)
+        box1.append(box)
+        box.classList.add("ox")
+    }
+    box1.classList.add("max")
+
+    // <<<---------section--2---------->>>
+
+    let all = document.createElement("div")
+    let About  = document.createElement("p")
+    let about2 = document.createElement("p")
+    let all1 = document.createElement("div")
+    let pics = ["https://www.w3schools.com/w3images/team2.jpg", "https://www.w3schools.com/w3images/team1.jpg", "https://www.w3schools.com/w3images/team3.jpg", "https://www.w3schools.com/w3images/team4.jpg"]
+    let John = ["John Doe", "Jane Doe", "Mike Ross", "Dan Star"]
+    let Jo = ["CEO & Founder", "Architect", "Architect", "Architect"]
+    document.body.append(all)
+    all.append(About,about2,all1)
+    all1.classList.add("al")
+    About.innerHTML = "About"
+    About.classList.add("ab")
+    about2.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    about2.classList.add("aba")
+
+    for (i =0; i<pics.length; i++){ 
+    let all11 = document.createElement("div")
+    let picuu = document.createElement("img")
+    let paraa = document.createElement("p")
+    let paraa1 = document.createElement("p")
+    let paraa2 = document.createElement("p")
+    let cont = document.createElement("button")
+    picuu.src =pics[i]
+    paraa.innerHTML = John[i]
+    paraa.classList.add("ba")
+    paraa1.innerHTML =Jo[i]
+    paraa1.classList.add("baa")
+    paraa2.innerHTML = "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum."
+    paraa2.classList.add("baa1")
+    cont.innerHTML = "contact"
+
+    all1.append(all11)
+    all11.append(picuu, paraa, paraa1, paraa2, cont)
+    all11.classList.add("all")
+
+}
+
+     
+    // <<<---------section--3---------->>>
+
+    let tat = document.createElement("div")
+    let tact = document.createElement("h6")
+    let lets = document.createElement("p")
+    let input0 = document.createElement("input")
+    let br = document.createElement("br")
+    let input1 = document.createElement("input")
+    let br1 = document.createElement("br")
+    let input2 = document.createElement("input")
+    let br2 = document.createElement("br")
+    let input3 = document.createElement("input")
+    let br3 = document.createElement("br")
+    let send = document.createElement("button")
+
+    tact.innerHTML = "Contact"
+    lets.innerHTML = "Lets get in touch and talk about your next project."
+    input0.setAttribute("type", "text")
+    input0.placeholder = "Enter your name"
+    input1.type = "email"
+    input1.setAttribute("type", "email")
+    input1.placeholder = "Enter your email"
+    input2.type = "text"
+    input2.placeholder = "suject"
+    input3.type = "text"
+    input3.placeholder = "comment"
+
+    send.innerHTML ="send message"
+
+    tact.classList.add("ab")
+    lets.classList.add("aba")
+    input0.classList.add("in")
+    input1.classList.add("in")
+    input2.classList.add("in")
+    input3.classList.add("in")
+    send.classList.add("tact1")
+
+    document.body.append(tat)
+    tat.append(tact, lets, input0,br, input1,br1, input2,br2, input3,br3, send)
+
+    // <<<---------section--4---------->>>
+
+    let map = document.createElement("div")
+    let map1 = document.createElement("img")
+
+    map1.src = "https://www.w3schools.com/w3images/map.jpg"
+    map1.classList.add("aa")
+
+    document.body.append(map)
+    map.append(map1)
+
+
+
+        
+    </script>
+    
+</body>
+</html>
